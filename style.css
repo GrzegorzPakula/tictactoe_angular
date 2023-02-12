@@ -1,0 +1,93 @@
+.container {
+    min-width: 320px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+  }
+  
+  body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    background-color: black !important;
+    color: white !important;
+  }
+  
+  h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+  }
+  
+  strong {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+  }
+  
+  .tic-tac-toe-table {
+    width: 300px;
+  }
+  
+  
+  .auto-margin {
+    width: auto;
+    margin: 2px auto !important;
+    float: none;
+  }
+  
+  .board-piece {
+    height: 175px;
+    width: 175px;
+    padding: 0px;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .board-button {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .logic {
+    color: white;
+    background-color: rgb(255, 255, 255);
+    border-color: darkgrey;
+    border-width: 5px;
+    border-style: solid;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  .text-container {
+    position: relative;
+    height: 4em;
+    
+  }
+  .animation.ng-enter {
+    transition: 0.5s linear all;
+  }
+  .animation.ng-enter {
+    opacity:0;
+  }
+  .animation.ng-enter-active {
+    opacity:1;
+  }
+  .animation.ng-leave {
+    opacity:1;
+  }
+  .animation.ng-leave-active {
+    opacity:0;
+  }
+  
+  @media only screen and (max-width: 570px) {
+    h1 {
+      font-size: 1.3em;
+    }
+  }
+
+
+  .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+    border: 0 !important;
+  }
+  td > button{
+    font-size: 35px !important;
+  }
+  .przycisk{
+    font-size: 20px !important;
+  }

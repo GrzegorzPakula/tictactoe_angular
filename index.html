@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kółko i krzyżyk</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.1/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.1/angular-animate.js"></script>
+    <script src="script.js"></script>
+    <script src="https://fonts.googleapis.com/css?family=Raleway:900,600,400"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> -->
+</head>
+<body>
+    <div class="container" ng-app="ticTacToe">
+        <div ng-controller="TicTacToeController as ticTacToe">
+          <div class="row">
+            <div class="col-span">
+              <div class="text-center">
+                <h1>Kółko i krzyżyk z AI</h1>
+                
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-span text-center text-container">
+              <h3 ng-animate-swap="ticTacToe.words" class="animation absolute">{{ticTacToe.words}}</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-span">
+              <div class="auto-margin">
+                <table class="table tic-tac-toe-table text-center">
+                  <tr>
+                    <td>
+                      <button ng-click="ticTacToe.play(0)" class="btn btn-default board-button">{{ticTacToe.game[0]}}</button>
+                    </td>
+                    <td>
+                      <button ng-click="ticTacToe.play(1)" class="btn btn-default board-button">{{ticTacToe.game[1]}}</button>
+                    </td>
+                    <td>
+                      <button ng-click="ticTacToe.play(2)" class="btn btn-default board-button">{{ticTacToe.game[2]}}</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button ng-click="ticTacToe.play(3)" class="btn btn-default board-button">{{ticTacToe.game[3]}}</button>
+                    </td>
+                    <td>
+                      <button ng-click="ticTacToe.play(4)" class="btn btn-default board-button">{{ticTacToe.game[4]}}</button>
+                    </td>
+                    <td>
+                      <button ng-click="ticTacToe.play(5)" class="btn btn-default board-button">{{ticTacToe.game[5]}}</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button ng-click="ticTacToe.play(6)" class="btn btn-default board-button">{{ticTacToe.game[6]}}</button>
+                    </td>
+                    <td>
+                      <button ng-click="ticTacToe.play(7)" class="btn btn-default board-button">{{ticTacToe.game[7]}}</button>
+                    </td>
+                    <td>
+                      <button ng-click="ticTacToe.play(8)" class="btn btn-default board-button">{{ticTacToe.game[8]}}</button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="auto-margin">
+              <button ng-click="ticTacToe.compFirst()" class='btn btn-warning left przycisk'>Komputer pierwszy</button>
+              <button ng-click="ticTacToe.reset()" class='btn btn-danger right przycisk'>Reset</button>
+            </div><br><br>
+            <p>Gra automatycznie resetuje się po dwóch sekundach od zakończenia</p>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
